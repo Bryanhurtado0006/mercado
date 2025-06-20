@@ -6,7 +6,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
-public class ApiService {
+public interface ApiService {
     @POST("/api/users")
     Call<User> createUser(@Body User user);
 
@@ -14,5 +14,5 @@ public class ApiService {
     Call<ResponseBody> testConnection();
 
 
-
 }
+
